@@ -1,0 +1,18 @@
+
+We need the following things for RabbitMQ Listener
+
+1)RabbitMQ Configuration file
+  RabbitMQConfig.java
+
+2)RabbitMQ Listener class  (We don't need to configure this class any where, @RabbitListener method will be called automatically)
+  @RabbitListener(queues = "VasuQueue1") method will be called when a message comes to the queue
+
+https://www.javainuse.com/spring/spring-boot-rabbitmq-hello-world
+
+1)Start the RabbitMQ sender application and send the messages  http://localhost:8080/javainuse-rabbitmq/producer?empName=emp1&empId=emp001 
+
+2)Start the RabbitMQ Listener application and see the consumed messages in the console
+
+mvn clean install
+
+mvn spring-boot:run

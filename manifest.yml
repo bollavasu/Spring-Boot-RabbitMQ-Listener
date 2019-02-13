@@ -1,0 +1,6 @@
+---
+applications:
+- name: SpringBootRabbitMQHelloWorldPcf
+  instances: 1
+  host: SpringBootRabbitMQHelloWorldPcf
+  path: target/SpringBootRabbitMQHelloWorld-0.0.1-SNAPSHOT.jar
